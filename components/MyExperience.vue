@@ -1,8 +1,17 @@
 <template>
-  <div class="text-center">
-      <h1 class="text-md-h4 text-h5 mt-10 mb-3">历程</h1>
+  <div>
+    <h1 class="text-md-h4 text-h5 mb-3 text-center">历程</h1>
 
-      <div class="text-body-1">
+    <v-row>
+      <v-col cols="12" sm="12" lg="3" offset-lg="1" md="4">
+        <v-img
+          src="/images/huhubun_at_ignite_2016.jpg"
+          max-width="306"
+          max-height="408"
+          class="ma-auto"
+        />
+      </v-col>
+      <v-col cols="12" sm="10" offset-sm="1" lg="7" md="8" offset-md="0">
         <p>
           小学时第一次接触到了计算机，当时还是 Windows 98 系统和大屁股的 CRT
           显示器，软磨硬泡家里终于同意让我参加计算机兴趣班，但报名当天，好像是因为前一天作业完成的不好，被班主任拒绝报名
@@ -16,26 +25,32 @@
           ，可以绘制线条，输出文本，还有大佬用它制作了游戏，我便被编程深深吸引。
         </p>
         <p>
-          升入高中后开办了人生中第一个网站“呼呼小盒子”<small>（现在已倒闭）</small>。当时大家或多或少都拥有了手机，我觉得应该有一个靠谱的下载软件的地方，就用“啊估文章软件管理系统
+          升入高中后开办了人生中第一个网站“呼呼小盒子”<small>（现在已倒闭）</small>。当时大家或多或少都拥有了手机，我觉得应该有一个靠谱的下载软件的地方，就用“啊估软件站
           ASP
           版”折腾了个手机软件下载网站。当时用百度搜索“涂鸦跳跃”排名第一的一度是我这个网站。
         </p>
         <p>
-          但上传别人的成果到自己网站上有悖互联网精神。当时相同功能的软件百花齐放，于是打算转型做专业软件测评网站。当然后来因为贪玩而失败，网站也被我关停了。
+          但上传别人的成果到自己网站上有悖互联网精神。当时相同功能的软件百花齐放，于是打算转型做专业软件测评网站，研究了织梦
+          CMS，学习了大量 HTML
+          知识后，还是因为贪玩而转型失败，网站也被我关停了。
         </p>
         <p>
           高三下学期时开办了人生中第二个网站，基于 WordPress
           的博客，使用的是现在这个站点的域名
-          nzc.me。但是因为不怎么更新，长期长草，加上 .me 域名现在无法备案，2019
+          nzc.me。但是因为不怎么更新，长期长草，加上前几年想捡起来的时候 .me
+          域名已经无法备案，到了 2019
           年被我关闭，博客推翻重做，便有了新的博客站点
-          <a href="https://bun.plus/">bun.plus</a>。
+          <a href="https://bun.plus/" class="blue-grey--text text--darken-4">
+            bun.plus
+          </a>
+          。
         </p>
-      </div>
-    </div>
+        <p>后来上大学来到大连，便在这里工作、定居。</p>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>

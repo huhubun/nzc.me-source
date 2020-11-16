@@ -1,8 +1,14 @@
 <template>
   <div>
     <top-about />
+    <v-divider class="my-10" />
+
     <my-experience />
+    <v-divider class="my-10" />
+
     <job-skill />
+
+    <div style="my-10">&nbsp;</div>
   </div>
 </template>
 

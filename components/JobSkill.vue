@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-md-h4 text-h5 mt-10 text-center">工作</h1>
+    <h1 class="text-md-h4 text-h5 text-center">工作</h1>
 
     <div class="text-center">
       <div>
@@ -42,13 +42,12 @@
                 </v-list-item-icon>
 
                 <v-list-item-avatar
-                  left
                   tile
                   :size="certificationLogoSize"
                   v-if="certification.img"
                   class="ma-0"
                 >
-                  <v-img src="/images/mcsa.png" width="128"></v-img>
+                  <v-img src="/images/mcsa.png"></v-img>
                 </v-list-item-avatar>
 
                 <v-list-item-content class="ml-3">
