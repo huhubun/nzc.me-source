@@ -24,14 +24,14 @@ export default {
         color: 'blue-grey darken-4'
       },
       {
-        title: '作品',
-        domain: 'bun.dev',
+        title: '开发',
+        domain: 'huhubun.com',
         color: 'blue darken-1'
       },
       {
-        title: '导航',
-        domain: 'huhubun.com',
-        color: 'rgb(247,137,126)'
+        title: '摄影',
+        domain: 'huhubun.lofter.com',
+        color: 'light-green darken-3'
       }
     ]
   })

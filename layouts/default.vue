@@ -57,7 +57,7 @@
         <span class="blue-grey-darken-4--text">
           &copy; {{ new Date().getFullYear() }}
           <a
-            href="https://huhubun.com/"
+            href="https://bun.plus/"
             class="text-decoration-none blue-grey--text text--darken-4"
           >
             huhubun
@@ -87,16 +87,11 @@ export default {
         },
         {
           icon: 'mdi-information-outline',
-          title: '作品',
-          href: 'https://bun.dev/'
-        },
-        {
-          icon: 'mdi-information-outline',
-          title: '导航',
+          title: '开发',
           href: 'https://huhubun.com/'
         }
       ],
-      title: '呼呼小笼包的介绍'
+      title: '关于呼呼小笼包'
     }
   }
 }
