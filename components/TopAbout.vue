@@ -1,6 +1,6 @@
 <template>
   <div class="text-center">
-    <h1 class="text-md-h2 text-h4 mt-10 mb-3">关于 呼呼小笼包</h1>
+    <h1 class="text-md-h2 text-h4 mt-10 mb-3">关于呼呼小笼包</h1>
     <div class="mb-6">
       <v-chip
         v-for="tag in myTags"

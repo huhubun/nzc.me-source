@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_JS_VERSION }}
 
@@ -21,7 +21,7 @@ jobs:
         run: npm -v
 
       - name: Checkout source
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           path: source
 
@@ -33,7 +33,7 @@ jobs:
           npm run generate
 
       - name: Checkout nzc.me
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: huhubun/nzc.me
           path: site
