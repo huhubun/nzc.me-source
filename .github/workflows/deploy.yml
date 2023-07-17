@@ -3,7 +3,7 @@ name: Deploy nzc.me
 on: [push, pull_request]
 
 env:
-  NODE_JS_VERSION: 12
+  NODE_JS_VERSION: 18
 
 jobs:
   main:

@@ -63,33 +63,6 @@
           </v-col>
         </v-row>
       </div>
-
-      <div>
-        <v-row class="justify-center">
-          <v-col
-            v-for="(skill, index) in jobSkills"
-            :key="skill.label"
-            cols="12"
-            sm="10"
-            class="py-0"
-          >
-            <v-subheader class="pl-0"> {{ skill.label }} </v-subheader>
-            <v-slider
-              readonly
-              height="10px"
-              :value="skill.lv.value"
-              :tick-labels="
-                index == 0 || index == jobSkills.length - 1
-                  ? jobSkillLabels
-                  : []
-              "
-              :color="skill.lv.color"
-              :max="jobSkillLabels.length - 1"
-              ticks="always"
-            ></v-slider>
-          </v-col>
-        </v-row>
-      </div>
     </div>
   </div>
 </template>
@@ -99,51 +72,26 @@ export default {
   data() {
     const nowTime = new Date()
     const dateTimeOfFirstTimeToWork = new Date(2014, 8 - 1, 11)
-    const jobSkillLabels = {
-      lv1: {
-        text: '了解',
-        value: 0,
-        color: 'grey darken-3'
-      },
-      lv2: {
-        text: '掌握',
-        value: 1,
-        color: 'blue-grey'
-      },
-      lv3: {
-        text: '熟练掌握',
-        value: 2,
-        color: 'blue'
-      },
-      lv4: {
-        text: '精通',
-        value: 3,
-        color: 'green'
-      }
-    }
 
     return {
       jobCards: [
         {
-          title: '工作经验',
+          title: '年限',
           text: `${
             nowTime.getUTCFullYear() -
             dateTimeOfFirstTimeToWork.getUTCFullYear()
           } 年`
         },
         {
-          title: '主要方向',
-          text: 'ASP.NET'
+          title: '职位',
+          text: '高级研发工程师 | 研发经理'
         },
         {
-          title: '最高职位',
-          text: '开发经理'
+          title: '方向',
+          text: 'C# | ASP.NET'
         }
       ],
 
-      jobSkillLabels: Object.keys(jobSkillLabels).map(key => {
-        return jobSkillLabels[key].text
-      }),
       certificationLogoSize: 64,
       certifications: [
         {
@@ -156,54 +104,8 @@ export default {
           subtitle: 'Microsoft Certified Solutions Associate',
           img: '/images/mcsa.png'
         }
-      ],
-
-      jobSkills: [
-        {
-          label: 'C#',
-          lv: jobSkillLabels.lv3
-        },
-        {
-          label: 'ASP.NET MVC / Web API',
-          lv: jobSkillLabels.lv3
-        },
-        {
-          label: 'Entity Framework',
-          lv: jobSkillLabels.lv3
-        },
-        {
-          label: 'SQL Server',
-          lv: jobSkillLabels.lv2
-        },
-        {
-          label: 'Redis',
-          lv: jobSkillLabels.lv2
-        },
-        {
-          label: 'RabbitMQ',
-          lv: jobSkillLabels.lv2
-        },
-        {
-          label: 'JavaScript',
-          lv: jobSkillLabels.lv3
-        },
-        {
-          label: 'jQuery',
-          lv: jobSkillLabels.lv2
-        },
-        {
-          label: 'Vue.js',
-          lv: jobSkillLabels.lv2
-        },
-        {
-          label: 'Jenkins',
-          lv: jobSkillLabels.lv2
-        }
       ]
     }
   }
 }
 </script>
-
-<style>
-</style>

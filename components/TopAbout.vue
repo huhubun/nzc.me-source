@@ -45,7 +45,7 @@ export default {
         text: '现居辽宁大连'
       },
       {
-        text: '软件开发工程师'
+        text: '软件研发工程师'
       }
     ]
   })

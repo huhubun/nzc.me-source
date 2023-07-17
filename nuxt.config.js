@@ -8,7 +8,7 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - 呼呼小笼包的介绍 nzc.me',
+    titleTemplate: '%s - 关于呼呼小笼包 nzc.me',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
@@ -29,7 +29,6 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    { src: '@/plugins/cnzz', ssr: false }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
